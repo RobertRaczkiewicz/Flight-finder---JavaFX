@@ -29,12 +29,7 @@ public class MainController {
     }
 
     public void setCenter (String fxmlPath) throws IOException {
-        FXMLLoader loader = new FXMLLoader(this.getClass().getResource(fxmlPath));
-        ResourceBundle bundle = ResourceBundle.getBundle("bundles.messages_eng");
-        loader.setResources(bundle);
-        Parent parent;
-        parent = loader.load();
-        borderPane.setCenter(parent);
+        borderPane.setCenter(FxmlUtils.fxmlLoader(fxmlPath));
     }
 
     public void closeApplication() {
