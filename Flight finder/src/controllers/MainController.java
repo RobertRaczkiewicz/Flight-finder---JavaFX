@@ -1,5 +1,5 @@
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
+package controllers;
+
 import utils.DialogsUtils;
 import javafx.application.Application;
 import javafx.event.ActionEvent;

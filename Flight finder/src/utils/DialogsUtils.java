@@ -29,8 +29,8 @@ public class DialogsUtils {
 
     public static void errorDialog (String error){
         Alert errorAlert = new Alert(Alert.AlertType.ERROR);
-        errorAlert.setTitle(bundle.getString("exit.title1"));
-        errorAlert.setHeaderText(bundle.getString("exit.header1"));
+        errorAlert.setTitle(bundle.getString("error.title"));
+        errorAlert.setHeaderText(bundle.getString("error.header"));
 
         TextArea textArea = new TextArea(error);
         errorAlert.getDialogPane().setContent(textArea);
